@@ -1,0 +1,75 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/john/Desktop/Solidity Projects/voting-dapp/contracts/Election.sol": {
+      "lastModificationDate": 1627647526152,
+      "contentHash": "5d66f1c3299f252e8cd2a08582cade01",
+      "sourceName": "contracts/Election.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "Election"
+      ]
+    },
+    "/Users/john/Desktop/Solidity Projects/voting-dapp/contracts/Voters.sol": {
+      "lastModificationDate": 1627633389435,
+      "contentHash": "d4b021f3e5577eab25844e0cbceca5c0",
+      "sourceName": "contracts/Voters.sol",
+      "solcConfig": {
+        "version": "0.8.4",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Election.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "Voters"
+      ]
+    }
+  }
+}
