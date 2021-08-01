@@ -37,7 +37,10 @@ contract Voters is Election {
     }
 
     function changeVote(uint _candId) public {
-        retractVote();
-        castVote(_candId);
+        require(voters[msg.sender].voted == true);
+        require(_candId > 0 && _candId <= candidates.length);
+        votes[voters[msg.sender].selection]--;
+        voters[msg.sender].selection = _candId;
+        votes[voters[msg.sender].selection]++;
     }
 }
